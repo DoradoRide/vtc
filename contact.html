@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--NAVIG BAR + SIDE BAR-->
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Partenaires</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            
+            <li><a href="index.html">Accueil</a></li>
+            <li class="hideOnMobile"><a href="#">Services</a></li>
+            <li class="hideOnMobile"><a href="#">Partenaires</a></li>
+            <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+<!---->
+<!--BANNER-->
+<div class="main-image">
+    <div class="container">
+        <span><img width="70%" height="auto" src="images/Dorado VTC.png" alt=""></span>
+        <span class="cen">Chauffeur privé à votre service</span>
+        <a class="button" href="#">Réserver</a>
+    </div>
+</div>
+<!---->
+<!--CONTACT FORM-->
+<div class="contactcontainer">
+
+            <div class="cbox1">
+                <h2>Contact</h2>
+                <br>
+                <form method="post" action="send-email.php">
+                    <input class="inputbox" type="text" name="name" id="name" placeholder="Nom" required>
+                        <br>
+                    
+                    <input class="inputbox" type="email" name="email" id="email" placeholder="Mail" required>
+                        <br>
+                    
+                    <textarea class="inputboxmess" name="message" id="message" placeholder="Message" required></textarea>
+    
+                    <br>
+    
+                    <button class="buttoncontact" role="button">Envoyer</button>
+                </form>
+            </div>
+</div>
+<!---->
+
+</body>
+</html>

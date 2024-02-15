@@ -17,7 +17,10 @@ body{
     font-family: "Pop";
 }
 h1 {
-    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    font-size: 2.22em;
+    font-weight: 500;
 }
 h2 {
     font-size: 1.5em;
@@ -52,8 +55,12 @@ nav a{
     transition: 333ms;
 }
 nav a:hover{
-    background-color: rgba(25, 26, 28, 1);
+    background-color: #17181a;
     color: #e1e1ea;
+}
+nav a:active{
+    background-color: #72767c;
+    color: #17181a;
 }
 nav li:first-child{
     margin-right: auto;
@@ -129,8 +136,12 @@ nav li:first-child{
     transition: 333ms;
 }
 .button:hover {
-    background-color: rgba(25, 26, 28, 1);
-    color: #e1e1ea;
+    background-color: rgba(155, 139, 93, 1);
+    color: #17181a;
+}
+.button:active {
+    background-color: #72767c;
+    color: #17181a;
 }
 /* GRID+BOX */
 .Grid {
@@ -156,6 +167,89 @@ nav li:first-child{
         }
 
 
+}
+/* CONTACT FORM*/
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #17181a;
+    
+}
+.cbox1 {
+    border-width: 1px;
+    border: solid;
+    border-color: #e1e1ea;
+    max-width: 600px;
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: #e1e1ea;
+    text-align: center;
+}
+.inputbox {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-left: 1px solid #17181a;
+    border-bottom: 1px solid #17181a;
+    background-color: #e1e1ea;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: medium;
+    padding: 6px;
+    margin-bottom: 7%;
+    max-height: 300px;
+    max-width: 600px;
+    min-width: 160px;
+    min-height: 30px;
+}
+.inputboxmess {
+    outline: none;
+    border: none;
+    border-left: 1px solid #17181a;
+    border-bottom: 1px solid #17181a;
+    background-color: #e1e1ea;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-size: medium;
+    padding: 6px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    max-height: 300px;
+    max-width: 600px;
+    min-width: 160px;
+    min-height: 80px;
+}
+/* Button Contact */
+.buttoncontact {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    color: #e1e1ea;
+    padding: 8px 20px;
+    background: #17181a;
+    text-decoration: none;
+    border-radius: 0;
+    transition: 333ms;
+    border: none;
+    cursor: pointer;
+    
+}
+.buttoncontact:hover,
+.buttoncontact:focus { 
+    background-color: rgba(155, 139, 93, 1);
+    color: #17181a;
+}
+.buttoncontact:active {
+    background-color: #72767c;
+    color: #17181a;
+}
+.buttoncontact:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
 }
 /* SLIDESHOW */
 .slider {
