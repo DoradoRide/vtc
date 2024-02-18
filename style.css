@@ -355,3 +355,34 @@ nav li:first-child{
     top: 0;
     transform: rotateZ(180deg);
 }
+/* FOOTER */
+.footer-basic {
+    padding: 10px 0;
+    background-color: #c3c0a2;
+    color: #1d1b17;
+}
+.footer-basic .social {
+    text-align: center;
+}
+.footer-basic .social > a {
+    font-size:24px;
+    width: 33px;
+    height: 33px;
+    line-height: 34px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #1d1b17;
+    margin: 0 6px;
+    color: inherit;
+    opacity: 0.69;
+} 
+.footer-basic .social > a:hover {
+    opacity: 1;
+} 
+.footer-basic .copyright {
+    margin-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #1d1b17;
+}
