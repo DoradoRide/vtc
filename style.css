@@ -108,7 +108,7 @@ nav li:first-child{
 .main-image {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    background: url(images/Mazda3vin.png) no-repeat center;
+    background: url(images/Mazda3vin.jpg) no-repeat center;
     background-size: cover;
     height: 300px;
     overflow: hidden;
@@ -181,7 +181,7 @@ nav li:first-child{
     margin-bottom: 3%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
-    background: url(images/Mazdavintb.png) no-repeat center;
+    background: url(images/Mazdavintb.jpg) no-repeat center;
     background-size: cover;
     height: 500px;
     overflow: hidden;
